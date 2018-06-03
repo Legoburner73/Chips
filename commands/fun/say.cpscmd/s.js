@@ -8,7 +8,6 @@ module.exports = {
       author.id === '166630166825664512'
     ) {
       // Antonio, 166..12
-      if(suffix === "") return send(`<@${author.id}>, Please include a message for the bot to repeat`);
       msg.delete().catch(_ => _);
       return send(suffix, { disableEveryone: true });
     }
